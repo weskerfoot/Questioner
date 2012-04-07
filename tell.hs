@@ -6,7 +6,7 @@ import System.Console.Readline
 import Text.Read.HT
 import qualified System.IO.Strict as So
 
-questionPath = "/home/wes/haskell/Questioner/questions.json"
+questionPath = "./questions.json"
 
 check = (readline "> ") >>= output where
     output (Nothing) = return Nothing
