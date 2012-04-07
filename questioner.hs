@@ -6,7 +6,7 @@ import System.Console.Readline
 import Control.Monad
 import Text.Printf
 
-questionPath = "/home/wes/haskell/Questioner/questions.json"
+questionPath = "./questions.json"
 getQuestionFile = So.readFile questionPath
 
 getjust (Just a) = a
