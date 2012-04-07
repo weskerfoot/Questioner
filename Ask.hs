@@ -7,8 +7,8 @@ import Data.List.Split
 import Text.JSON
 
 data Question = Question {text :: String ,
-                                                     possibleAnswers :: [String],
-                                                     correctAnswer :: String}
+                possibleAnswers :: [String],
+                correctAnswer :: String}
 
 letters = join $ zipWith (\l n -> (replicate n) <$> l) (repeat ['a'..'z']) ([1, 2..])
 
