@@ -22,5 +22,5 @@ main = do
                                         let isCorrect = (correct (getjust answer) q)
                                         printf "%s is %s\n\n" (getjust answer) (show isCorrect)
                                         case isCorrect of
-                                            (True) -> return $ (t+1, a+1)
+                                            (True) -> return (t+1, a+1)
                                             (False) -> return (t+1, a)
