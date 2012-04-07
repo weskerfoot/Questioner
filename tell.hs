@@ -11,7 +11,7 @@ questionPath = "./questions.json"
 check = (readline "> ") >>= output where
     output (Nothing) = return Nothing
     output (Just a) | a == "END" = return Nothing
-                                | otherwise    = return (Just a)
+                    | otherwise    = return (Just a)
 
 getQuestions = whileJust check return
 getQuestionFile = So.readFile questionPath
